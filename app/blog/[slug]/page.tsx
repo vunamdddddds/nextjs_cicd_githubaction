@@ -9,5 +9,8 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default function Page({ params }: PageProps) {
-  return <h1>Slug: {params.slug}</h1>;
+  return <>
+  <h1>Slug: {params.slug}</h1>;
+  <p>Holatex</p></>
+  
 }
