@@ -10,5 +10,5 @@ it("App Router: Works with dynamic route segments", () => {
   expect(screen.getByRole("heading")).toHaveTextContent("Slug: Test");
 });
 
-
+console.log("test")
 
