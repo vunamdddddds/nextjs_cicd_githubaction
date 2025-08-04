@@ -10,5 +10,10 @@ it("App Router: Works with dynamic route segments", () => {
   expect(screen.getByRole("heading")).toHaveTextContent("Slug: Test");
 });
 
-console.log("test")
+
+it("Holatex to be in the document ",()=>{
+  render(<Page params={{ slug: "Test" }} />);
+  expect(screen.getByText("Holatex")).toBeInTheDocument();
+})
+
 
